@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "seltz": {
+      "type": "streamable-http",
+      "url": "https://mcp.seltz.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${SELTZ_API_KEY}"
+      }
+    }
+  }
+}
