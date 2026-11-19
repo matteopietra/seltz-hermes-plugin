@@ -1,0 +1,9 @@
+# Headless fallback. Set SELTZ_API_KEY in the active Hermes profile.
+# Replace any existing mcp_servers.seltz entry, including auth: oauth.
+# Omit this file when the packaged mcp.json connection is enough.
+mcp_servers:
+  seltz:
+    url: https://mcp.seltz.ai/mcp
+    strict_redirect_headers: true
+    headers:
+      Authorization: "Bearer ${SELTZ_API_KEY}"

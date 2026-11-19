@@ -1,0 +1,9 @@
+# Default sign-in. Merge this into the active Hermes profile's config.yaml.
+# Replace any existing mcp_servers.seltz entry. A native entry takes precedence
+# over the API-key connection packaged in mcp.json, including its headers.
+# Do not add an Authorization header: Hermes supplies the OAuth bearer token.
+mcp_servers:
+  seltz:
+    url: https://mcp.seltz.ai/mcp
+    auth: oauth
+    strict_redirect_headers: true
